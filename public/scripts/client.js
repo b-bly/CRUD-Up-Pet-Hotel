@@ -14,8 +14,20 @@ app.controller('PetController', ['$http', function($http) {
             data: self.newOwner
         }).then(function(response) {
             console.log(response)
-                //will need get function call
+            self.getOwners();    //will need get function call
         });
     }
 
+    self.getOwners = function(){
+        $http({
+            method: 'GET',
+            url: '/pets',
+        }).then(function (response){
+            console.log(response);
+            console.log(response.data);
+            self.owners = response.data;
+        });
+
+    };
+    
 }]);
