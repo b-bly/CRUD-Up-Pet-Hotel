@@ -1,0 +1,13 @@
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("http://cdn.homedit.com/wp-content/uploads/2014/05/contemporary-geometric-diy-doghouse.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    opacity: 0.3;
+}
