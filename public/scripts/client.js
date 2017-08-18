@@ -6,6 +6,13 @@ app.controller('PetController', ['$http', function($http) {
     console.log('Pet controller has been loaded');
     var self = this;
     self.owners = [];
+    self.ownersStrings = [];
+
+function concatNames(owners) {
+    owners.forEach(function(nameObj, i) {
+         ownersStrings.push(response.first_name + ' ' + response.last_name);
+    });
+}
 
     self.postOwner = function() {
         $http({

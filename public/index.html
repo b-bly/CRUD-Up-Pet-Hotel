@@ -19,11 +19,14 @@
         <button id="registerButton" ng-click="vm.postOwner()">Register</button>
     </div>
     <div id="petRegistration">
-<!-- Tom -->
+        <label for "ownerName">Owner Name<label>
+        <select ng-model="selectedName" ng-options="owner for owner in vm.ownersStrings">
+            </select>
+        
     </div>
 
     <div id="petTable">
-        <!-- Julie -->
+       
     </div>
 </body>
 
