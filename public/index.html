@@ -18,7 +18,16 @@
         <input type="text" id="last_name" placeholder="Last Name" ng-model="vm.newOwner.lastName">
         <button id="registerButton" ng-click="vm.postOwner()">Register</button>
     </div>
+    <div id="petRegistration">
+        <label for "ownerName">Owner Name<label>
+        <select ng-model="selectedName" ng-options="owner for owner in vm.ownersStrings">
+            </select>
+        
+    </div>
 
+    <div id="petTable">
+       
+    </div>
 </body>
 
 </html>
