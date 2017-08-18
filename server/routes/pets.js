@@ -27,4 +27,25 @@ router.post('/', function(req, res) {
         }
     });
 });
+
+router.get('/', function(req, res) {
+    console.log('pets get was hit!');
+    pool.connect(function(errorConnectingToDatabase, client, done) {
+        if (errorConnectingToDatabase) {
+            console.log('Error connecting to database', errorConnectingToDatabase);
+            res.sendStatus(500);
+        } else {
+            client.query('SELECT * FROM owners', function(errorMakingQuery, result) {
+                done(); 
+                if (errorMakingQuery) {
+                    console.log('Error making database query', errorMakingQuery);
+                    res.sendStatus(500);
+                } else {
+                    res.send(result.rows);
+                }
+            });
+        }
+    });
+});
+
 module.exports = router;
