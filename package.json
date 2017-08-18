@@ -1,24 +1,25 @@
 {
-  "name": "us",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/b-bly/CRUD-Up-Pet-Hotel.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/b-bly/CRUD-Up-Pet-Hotel/issues"
-  },
-  "homepage": "https://github.com/b-bly/CRUD-Up-Pet-Hotel#readme",
-  "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.4",
-    "pg": "^7.1.2"
-  }
+    "name": "us",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server/app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server/app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/b-bly/CRUD-Up-Pet-Hotel.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/b-bly/CRUD-Up-Pet-Hotel/issues"
+    },
+    "homepage": "https://github.com/b-bly/CRUD-Up-Pet-Hotel#readme",
+    "dependencies": {
+        "body-parser": "^1.17.2",
+        "express": "^4.15.4",
+        "pg": "^7.1.2"
+    }
 }
